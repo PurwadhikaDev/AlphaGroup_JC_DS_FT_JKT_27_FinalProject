@@ -84,7 +84,31 @@ Evaluasi model dilakukan menggunakan metrik F2-Score.
 Model dengan performa terbaik kemudian disempurnakan menggunakan GridSearchCV.
 
 ## Selected Model
-|         ALGORITHMS        | RESAMPLER     | TRAINING  DATA F-2 SCORE       |  TESTING DATA F-2 SCORE |
-| --------------------------| --------------| ----------------------------------| | --------------------------- |
-| Logistic Regression       | Random Under Sampler |          0.9271             |           0.8639            |
+|         ALGORITHMS        | RESAMPLER     |
+| --------------------------| --------------| 
+| Logistic Regression       | Random Under Sampler |
 
+Classification Report - Train Data
+              precision    recall  f1-score   support
+
+           0       0.98      0.95      0.96      4130
+           1       0.87      0.95      0.91      1495
+
+    accuracy                           0.95      5625
+   macro avg       0.92      0.95      0.94      5625
+weighted avg       0.95      0.95      0.95      5625
+
+
+Classification Report - Test Data
+              precision    recall  f1-score   support
+
+           0       0.98      0.94      0.96      1033
+           1       0.86      0.94      0.90       374
+
+    accuracy                           0.94      1407
+   macro avg       0.92      0.94      0.93      1407
+weighted avg       0.94      0.94      0.94      1407
+
+
+F2-Score - Train Data: 0.9347
+F2-Score - Test Data: 0.9191
