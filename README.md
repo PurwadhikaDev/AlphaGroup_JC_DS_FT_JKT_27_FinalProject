@@ -19,3 +19,77 @@ Proyek ini bertujuan untuk menganalisis pola perilaku pelanggan, mengidentifikas
 * Menganalisis pola perilaku pelanggan dan faktor utama penyebab churn menggunakan data layanan, transaksi, dan kepuasan pelanggan.
 * Mengidentifikasi segmen pelanggan dengan risiko churn tinggi sebagai dasar untuk strategi retensi yang lebih terarah.
 * Membangun model machine learning prediktif untuk memproyeksikan kemungkinan churn dan mendukung pengambilan keputusan berbasis data.
+
+## Key Insights
+* Kontrak bulanan (month-to-month) menyebabkan tingkat churn yang lebih tinggi (42,71%)
+* Skor kepuasan memiliki korelasi yang sangat kuat dengan churn
+* Jenis layanan internet Fiber Optic menyebabkan tingkat churn yang lebih tinggi (41,9%)
+
+## Dataset
+```
+01] CustomerID  
+02] Gender  
+03] SeniorCitizen  
+04] Age  
+05] Married  
+06] City  
+07] Country  
+08] ZipCode  
+09] Population  
+10] Latitude  
+11] Longitude  
+12] Partner  
+13] Dependents  
+14] PhoneService  
+15] MultipleLines  
+16] InternetService  
+17] StreamingTV  
+18] StreamingMovies  
+19] StreamingMusic  
+20] UnlimitedData  
+21] Contract  
+22] PaperlessBilling  
+23] PaymentMethod  
+24] OnlineSecurity  
+25] OnlineBackup  
+26] DeviceProtection  
+27] TechSupport  
+28] Referrals  
+29] ReferredFriend  
+30] SatisfactionScore  
+31] Tenure  
+32] MonthlyCharges  
+33] TotalCharges  
+34] TotalExtraDataCharges  
+35] TotalLongDistanceCharges  
+36] TotalRefunds  
+37] TotalRevenue  
+38] AvgMonthlyGBDownload  
+39] AvgMonthlyLongDistanceCharges  
+40] Churn  
+41] ChurnCategory  
+42] ChurnReason  
+43] ChurnScore  
+44] CLTV
+```
+
+## Modeling
+Beberapa algoritma klasifikasi telah diuji, termasuk:
+* Logistic Regression
+* Random Forest
+* XGBoost
+* K-Nearest Neighbors
+* Decision Tree
+Evaluasi model dilakukan menggunakan metrik F2-Score.
+Model dengan performa terbaik kemudian disempurnakan menggunakan GridSearchCV.
+
+## Model Evaluation
+|         ALGORITHMS        | TRAINING  DATA F-2 SCORE | TESTING DATA F-2 SCORE |
+| --------------------------| ----------------------------- | --------------------------- |
+| Logistic Regression       |            0.9271             |           0.8639            |
+| Random Forest             |            0.8902             |           0.8413            |
+| Support Vector Machine    |            0.9349             |           0.8662            |
+| XGBoost                   |            1.0000             |           0.8526            |
+| LightGBM                  |            1.0000             |           0.8390            |
+| CatBoost                  |            0.9845             |           0.8503            |
+| AdaBoost                  |            0.9077             |           0.8322            |
