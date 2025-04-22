@@ -88,7 +88,7 @@ Model dengan performa terbaik kemudian disempurnakan menggunakan GridSearchCV.
 | --------------------------| --------------| 
 | Logistic Regression       | Random Under Sampler |
 
-## Classification Report - Train Data
+#### Classification Report - Train Data
 
 | Class | Precision | Recall | F1-Score | Support |
 |-------|-----------|--------|----------|---------|
@@ -98,7 +98,7 @@ Model dengan performa terbaik kemudian disempurnakan menggunakan GridSearchCV.
 | **Macro Avg**  | 0.92      | 0.95   | 0.94     | 5625    |
 | **Weighted Avg** | 0.95    | 0.95   | 0.95     | 5625    |
 
-## Classification Report - Test Data
+#### Classification Report - Test Data
 
 | Class | Precision | Recall | F1-Score | Support |
 |-------|-----------|--------|----------|---------|
@@ -108,10 +108,28 @@ Model dengan performa terbaik kemudian disempurnakan menggunakan GridSearchCV.
 | **Macro Avg**  | 0.92      | 0.94   | 0.93     | 1407    |
 | **Weighted Avg** | 0.94    | 0.94   | 0.94     | 1407    |
 
-## F2-Score
+#### F2-Score
 
 | Dataset | F2-Score |
 |---------|----------|
 | Train   | 0.9347   |
 | Test    | 0.9191   |
 
+## Kesimpulan
+
+## Kesimpulan
+
+Berdasarkan hasil analisis churn pada data pelanggan Telwave, dapat disimpulkan bahwa:
+
+1. **Penyebab Utama Churn**: Tingginya churn rate disebabkan oleh faktor kompetitor, terutama penawaran yang lebih menarik, perangkat yang lebih baik, serta kuota data dan kecepatan internet yang lebih tinggi. Hal ini menandakan perlunya Telwave meningkatkan proposisi nilai yang ditawarkan kepada pelanggan dalam hal harga, promo, dan kualitas layanan.
+
+2. **Peran Model Prediksi Churn**: Model prediksi churn yang dibangun dapat mengidentifikasi pelanggan berisiko tinggi untuk churn berdasarkan karakteristik dan perilaku mereka. Model ini dapat digunakan untuk:
+   - Segmentasi pelanggan berisiko tinggi, seperti pelanggan dengan kontrak bulanan, pengguna fiber optic, dan skor kepuasan rendah.
+   - Menyusun intervensi retensi yang lebih tepat, seperti penawaran bundling, diskon harga, atau program loyalitas.
+   - Mengurangi churn rate secara proaktif dengan fokus pada pelanggan berisiko tinggi.
+
+Dengan menggabungkan wawasan dari analisis churn dan model prediktif, Telwave memiliki peluang untuk meningkatkan retensi pelanggan dan memperkuat posisinya di pasar telekomunikasi yang kompetitif.
+
+
+[Link Tableau](https://s.id/Alpha-Tableau-ChurnAnalysis)
+[Link App](https://telwave-customer-churn-prediction.streamlit.app/)
