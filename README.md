@@ -83,13 +83,8 @@ Beberapa algoritma klasifikasi telah diuji, termasuk:
 Evaluasi model dilakukan menggunakan metrik F2-Score.
 Model dengan performa terbaik kemudian disempurnakan menggunakan GridSearchCV.
 
-## Model Evaluation
-|         ALGORITHMS        | TRAINING  DATA F-2 SCORE | TESTING DATA F-2 SCORE |
-| --------------------------| ----------------------------- | --------------------------- |
-| Logistic Regression       |            0.9271             |           0.8639            |
-| Random Forest             |            0.8902             |           0.8413            |
-| Support Vector Machine    |            0.9349             |           0.8662            |
-| XGBoost                   |            1.0000             |           0.8526            |
-| LightGBM                  |            1.0000             |           0.8390            |
-| CatBoost                  |            0.9845             |           0.8503            |
-| AdaBoost                  |            0.9077             |           0.8322            |
+## Selected Model
+|         ALGORITHMS        | RESAMPLER     | TRAINING  DATA F-2 SCORE      | TESTING DATA F-2 SCORE |
+| --------------------------| --------------| ----------------------------- | --------------------------- |
+| Logistic Regression       | Random Under Sampler |          0.9271             |           0.8639            |
+
