@@ -117,8 +117,6 @@ Model dengan performa terbaik kemudian disempurnakan menggunakan GridSearchCV.
 
 ## Kesimpulan
 
-## Kesimpulan
-
 Berdasarkan hasil analisis churn pada data pelanggan Telwave, dapat disimpulkan bahwa:
 
 1. **Penyebab Utama Churn**: Tingginya churn rate disebabkan oleh faktor kompetitor, terutama penawaran yang lebih menarik, perangkat yang lebih baik, serta kuota data dan kecepatan internet yang lebih tinggi. Hal ini menandakan perlunya Telwave meningkatkan proposisi nilai yang ditawarkan kepada pelanggan dalam hal harga, promo, dan kualitas layanan.
@@ -132,4 +130,7 @@ Dengan menggabungkan wawasan dari analisis churn dan model prediktif, Telwave me
 
 
 [Link Tableau](https://s.id/Alpha-Tableau-ChurnAnalysis)
+
+[Link Powerpoint](https://s.id/Alpha-PPT-ChurnAnalysis)
+
 [Link App](https://telwave-customer-churn-prediction.streamlit.app/)
