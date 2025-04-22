@@ -128,6 +128,36 @@ Berdasarkan hasil analisis churn pada data pelanggan Telwave, dapat disimpulkan 
 
 Dengan menggabungkan wawasan dari analisis churn dan model prediktif, Telwave memiliki peluang untuk meningkatkan retensi pelanggan dan memperkuat posisinya di pasar telekomunikasi yang kompetitif.
 
+## Keuntungan Model
+
+Dalam skenario tanpa model, seluruh pelanggan diasumsikan akan churn, sehingga seluruhnya menjadi target program retensi. Hal ini menyebabkan **tidak ada pelanggan yang diklasifikasikan sebagai "True Negative"**, dan semua pelanggan non-churn mendapat perlakuan intervensi yang tidak diperlukan.
+
+Sebaliknya, model prediksi churn mampu mengklasifikasikan pelanggan dengan lebih tepat, mengurangi jumlah intervensi yang tidak perlu, serta meminimalkan kehilangan pelanggan akibat tidak ditindaklanjuti.
+
+##### Asumsi Biaya:
+- **False Positive (FP)**: Pelanggan tidak churn namun tetap diberi retensi → *Retention Cost*: **$10.3**
+- **False Negative (FN)**: Pelanggan churn tapi tidak ditindaklanjuti → *Customer Acquisition Cost*: **$53**
+
+##### Hasil Perhitungan Biaya:
+
+| Metode             | FP  | FN | Total Kerugian                                 |
+|--------------------|-----|----|------------------------------------------------|
+| **Tanpa Model**    | 1033| 0  | (1033 × $10.3) + (0 × $53) = **$10,949.80**    |
+| **Dengan Model**   | 67  | 25 | (67 × $10.3) + (25 × $53) = **$2,035.20**      |
+
+##### Perbandingan:
+
+| Metode             | Total Kerugian | Perbandingan              |
+|--------------------|----------------|---------------------------|
+| **Tanpa Model**    | $10,949.80     | **5.38× lebih buruk**     |
+| **Dengan Model**   | $2,035.20      | **Paling optimal**        |
+
+##### Kesimpulan:
+
+Model prediksi churn secara signifikan **menurunkan biaya intervensi** dengan hanya menargetkan pelanggan yang benar-benar berisiko tinggi untuk churn. Strategi ini tidak hanya menghemat biaya retensi dan akuisisi pelanggan, tetapi juga memungkinkan alokasi sumber daya yang lebih efektif dan berdampak langsung pada **peningkatan efisiensi dan profitabilitas bisnis**.
+
+Dengan total kerugian **lebih dari lima kali lebih rendah**, pendekatan berbasis model terbukti jauh lebih unggul dibandingkan asumsi tanpa segmentasi. Oleh karena itu, penggunaan model prediktif sangat direkomendasikan sebagai bagian dari strategi retensi pelanggan yang data-driven dan berkelanjutan.
+
 
 [Link Tableau](https://s.id/Alpha-Tableau-ChurnAnalysis)
 
