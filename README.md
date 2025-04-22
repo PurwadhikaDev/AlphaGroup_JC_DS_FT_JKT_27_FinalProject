@@ -8,19 +8,19 @@
     <img src="https://camo.githubusercontent.com/896b68c9d0df47c2c13475f29506cdab373599559d1e231e624c655f3d46eace/68747470733a2f2f7370656369616c732d696d616765732e666f72626573696d672e636f6d2f696d61676573657276652f3566316664363739633430343964376265633637346339322f39363078302e6769663f6669743d7363616c65">
 </div>
 
-## Overview
+## 🌐 Overview
 Telwave Technology adalah perusahaan penyedia layanan internet, WiFi, dan telepon untuk pelanggan individu maupun bisnis. Beroperasi di industri yang kompetitif dan price-sensitive, Telwave menghadapi tantangan besar dalam mempertahankan pelanggan.
 
 Dengan churn rate mencapai 26%, jauh di atas rata-rata industri, kehilangan pelanggan menjadi ancaman serius bagi profitabilitas. Karena biaya mendapatkan pelanggan baru jauh lebih mahal daripada mempertahankan pelanggan lama, pendekatan berbasis data sangat penting untuk memprediksi dan mencegah churn.
 
 Proyek ini bertujuan untuk menganalisis pola perilaku pelanggan, mengidentifikasi faktor-faktor utama penyebab churn, serta membangun model prediktif untuk mendeteksi pelanggan berisiko tinggi.
 
-## Objective
+## 🎯 Objective
 * Menganalisis pola perilaku pelanggan dan faktor utama penyebab churn menggunakan data layanan, transaksi, dan kepuasan pelanggan.
 * Mengidentifikasi segmen pelanggan dengan risiko churn tinggi sebagai dasar untuk strategi retensi yang lebih terarah.
 * Membangun model machine learning prediktif untuk memproyeksikan kemungkinan churn dan mendukung pengambilan keputusan berbasis data.
 
-## Key Insights
+## 💡 Key Insights
 * Kontrak bulanan (month-to-month) menyebabkan tingkat churn yang lebih tinggi (42,71%)
 * Skor kepuasan memiliki korelasi yang sangat kuat dengan churn
 * Jenis layanan internet Fiber Optic menyebabkan tingkat churn yang lebih tinggi (41,9%)
@@ -73,7 +73,7 @@ Proyek ini bertujuan untuk menganalisis pola perilaku pelanggan, mengidentifikas
 44] CLTV
 ```
 
-## Model Candidate
+## 🧠 Model Candidate
 Beberapa algoritma klasifikasi telah diuji, termasuk:
 * Logistic Regression
 * Random Forest
@@ -83,7 +83,7 @@ Beberapa algoritma klasifikasi telah diuji, termasuk:
 Evaluasi model dilakukan menggunakan metrik F2-Score.
 Model dengan performa terbaik kemudian disempurnakan menggunakan GridSearchCV.
 
-## Model Selected and Evaluation
+## ✅ Model Selected and Evaluation
 |         ALGORITHMS        | RESAMPLER     |
 | --------------------------| --------------| 
 | Logistic Regression       | Random Under Sampler |
@@ -115,7 +115,7 @@ Model dengan performa terbaik kemudian disempurnakan menggunakan GridSearchCV.
 | Train   | 0.9347   |
 | Test    | 0.9191   |
 
-## Kesimpulan
+## ⭐️ Kesimpulan
 
 Berdasarkan hasil analisis churn pada data pelanggan Telwave, dapat disimpulkan bahwa:
 
@@ -128,7 +128,7 @@ Berdasarkan hasil analisis churn pada data pelanggan Telwave, dapat disimpulkan 
 
 Dengan menggabungkan wawasan dari analisis churn dan model prediktif, Telwave memiliki peluang untuk meningkatkan retensi pelanggan dan memperkuat posisinya di pasar telekomunikasi yang kompetitif.
 
-## Keuntungan Model
+## 💸 Keuntungan Model
 
 Dalam skenario tanpa model, seluruh pelanggan diasumsikan akan churn, sehingga seluruhnya menjadi target program retensi. Hal ini menyebabkan **tidak ada pelanggan yang diklasifikasikan sebagai "True Negative"**, dan semua pelanggan non-churn mendapat perlakuan intervensi yang tidak diperlukan.
 
@@ -158,9 +158,8 @@ Model prediksi churn secara signifikan **menurunkan biaya intervensi** dengan ha
 
 Dengan total kerugian **lebih dari lima kali lebih rendah**, pendekatan berbasis model terbukti jauh lebih unggul dibandingkan asumsi tanpa segmentasi. Oleh karena itu, penggunaan model prediktif sangat direkomendasikan sebagai bagian dari strategi retensi pelanggan yang data-driven dan berkelanjutan.
 
+## Link Resources
 
-[Link Tableau](https://s.id/Alpha-Tableau-ChurnAnalysis)
-
-[Link Powerpoint](https://s.id/Alpha-PPT-ChurnAnalysis)
-
-[Link App](https://telwave-customer-churn-prediction.streamlit.app/)
+- [Link Tableau](https://s.id/Alpha-Tableau-ChurnAnalysis)
+- [Link Powerpoint](https://s.id/Alpha-PPT-ChurnAnalysis)
+- [Link App](https://telwave-customer-churn-prediction.streamlit.app/)
